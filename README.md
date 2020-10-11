@@ -18,7 +18,7 @@ Applying this design pattern to our use case, and from the architecture diagram 
 2. The drones publish their geo-location data to the same topic on the broker
 3. The broker distribute all the messages to the dashboard, so the dashboard can store and post-process all the data in real-time
 
-
+```
 + - - - - +                + - - - - - - - - - +        
 | vehicle | -- publish --> |                   |       
 + - - - - +                |                   |         + - - - - - +         + - - - - - +
@@ -30,7 +30,7 @@ Applying this design pattern to our use case, and from the architecture diagram 
 + - - - - +                |                   |---------> |  Server   |<------|           |
 | vehicle | -- publish --> |                   |           + - - - - - +       + - - - - - +
 + - - - - +                + - - - - - - - - - +
-
+```
 
 # Technologies 
 - MQTT  (Light weight payload)
