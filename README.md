@@ -25,7 +25,7 @@ Applying this design pattern to our use case, and from the architecture diagram 
                            |                   |         | Redis DB  |         |           |
 + - - - - +                |    MQTT Broker    |         + - - - - - +         |           |
 | vehicle | -- publish --> |                   |                ^              | Dashboard |
-+ - - - - +                |   drone/position  |                |              |           |
++ - - - - +                |   vehicle/position  |                |              |           |
                            |                   | Subscribe + - - - - - +       |           |
 + - - - - +                |                   |---------> |  Server   |<------|           |
 | vehicle | -- publish --> |                   |           + - - - - - +       + - - - - - +
